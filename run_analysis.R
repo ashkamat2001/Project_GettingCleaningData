@@ -118,10 +118,10 @@ for (i in 3:88)
 names(data_summ)
 
 #Writing the data to a file 
-write.table(tidy_data, "TidyData.txt" )
+write.table(tidy_data, "TidyData.txt", row.name=FALSE )
 
 #Checking that the data can be Read 
-new_data=read.table("TidyData.txt" )
+new_data=read.table("TidyData.txt", header=T)
 names(new_data)
 
 
