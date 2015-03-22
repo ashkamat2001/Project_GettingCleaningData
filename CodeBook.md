@@ -1,7 +1,7 @@
 DATA DICTIONARY for TidyData.txt
 ================================
 
-  [1] "Activity"       : Activity 
+  "1" "Activity"       : Activity 
 
               Can contain values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
@@ -9,8 +9,8 @@ DATA DICTIONARY for TidyData.txt
 
                   The activity code from y_<train|test>.txt was added into x_<train|test>.txt and the activity code was converterd into activity description by looking up the activity code from activity_labels.txt
 
-
-  [2] "Subject"         : Subject Code 
+ 
+ "2" "Subject"         : Subject Code 
 
               Can contain values:  1 to 30
 
@@ -36,174 +36,89 @@ DATA DICTIONARY for TidyData.txt
 
       7)The name was also augmented as "MeanOf<FeatureName>" to indicate that the variable is a mean of the corresponding feature.
 
- [3] "MeanOf.tBodyAcc.mean.X"  
-                   
- [4] "MeanOf.tBodyAcc.mean.Y"                     
-
- [5] "MeanOf.tBodyAcc.mean.Z"                     
-
- [6] "MeanOf.tBodyAcc.std.X"                      
-
- [7] "MeanOf.tBodyAcc.std.Y"                      
-
- [8] "MeanOf.tBodyAcc.std.Z"                      
-
- [9] "MeanOf.tGravityAcc.mean.X"                  
-
-[10] "MeanOf.tGravityAcc.mean.Y"                  
-
-[11] "MeanOf.tGravityAcc.mean.Z"                  
-
-[12] "MeanOf.tGravityAcc.std.X"                   
-
-[13] "MeanOf.tGravityAcc.std.Y"                   
-
-[14] "MeanOf.tGravityAcc.std.Z"                   
-
-[15] "MeanOf.tBodyAccJerk.mean.X"                 
-
-[16] "MeanOf.tBodyAccJerk.mean.Y"                 
-
-[17] "MeanOf.tBodyAccJerk.mean.Z"                 
-
-[18] "MeanOf.tBodyAccJerk.std.X"                  
-
-[19] "MeanOf.tBodyAccJerk.std.Y"                  
-
-[20] "MeanOf.tBodyAccJerk.std.Z"                  
-
-[21] "MeanOf.tBodyGyro.mean.X"                    
-
-[22] "MeanOf.tBodyGyro.mean.Y"                    
-
-[23] "MeanOf.tBodyGyro.mean.Z"                    
-
-[24] "MeanOf.tBodyGyro.std.X"                     
-
-[25] "MeanOf.tBodyGyro.std.Y"                     
-
-[26] "MeanOf.tBodyGyro.std.Z"                     
-
-[27] "MeanOf.tBodyGyroJerk.mean.X"                
-
-[28] "MeanOf.tBodyGyroJerk.mean.Y"                
-
-[29] "MeanOf.tBodyGyroJerk.mean.Z"                
-
-[30] "MeanOf.tBodyGyroJerk.std.X"                 
-
-[31] "MeanOf.tBodyGyroJerk.std.Y"                 
-
-[32] "MeanOf.tBodyGyroJerk.std.Z"                 
-
-[33] "MeanOf.tBodyAccMag.mean"                    
-
-[34] "MeanOf.tBodyAccMag.std"                     
-
-[35] "MeanOf.tGravityAccMag.mean"                 
-
-[36] "MeanOf.tGravityAccMag.std"                  
-
-[37] "MeanOf.tBodyAccJerkMag.mean"                
-
-[38] "MeanOf.tBodyAccJerkMag.std"                 
-
-[39] "MeanOf.tBodyGyroMag.mean"                   
-
-[40] "MeanOf.tBodyGyroMag.std"                    
-
-[41] "MeanOf.tBodyGyroJerkMag.mean"               
-
-[42] "MeanOf.tBodyGyroJerkMag.std"                
-
-[43] "MeanOf.fBodyAcc.mean.X"                     
-
-[44] "MeanOf.fBodyAcc.mean.Y"                     
-
-[45] "MeanOf.fBodyAcc.mean.Z"                     
-
-[46] "MeanOf.fBodyAcc.std.X"                      
-
-[47] "MeanOf.fBodyAcc.std.Y"                      
-
-[48] "MeanOf.fBodyAcc.std.Z"                      
-
-[49] "MeanOf.fBodyAcc.meanFreq.X"                 
-
-[50] "MeanOf.fBodyAcc.meanFreq.Y"                 
-
-[51] "MeanOf.fBodyAcc.meanFreq.Z"                 
-
-[52] "MeanOf.fBodyAccJerk.mean.X"                 
-
-[53] "MeanOf.fBodyAccJerk.mean.Y"                 
-
-[54] "MeanOf.fBodyAccJerk.mean.Z"                 
-
-[55] "MeanOf.fBodyAccJerk.std.X"                  
-
-[56] "MeanOf.fBodyAccJerk.std.Y"                  
-
-[57] "MeanOf.fBodyAccJerk.std.Z"                  
-
-[58] "MeanOf.fBodyAccJerk.meanFreq.X"             
-
-[59] "MeanOf.fBodyAccJerk.meanFreq.Y"             
-
-[60] "MeanOf.fBodyAccJerk.meanFreq.Z"             
-
-[61] "MeanOf.fBodyGyro.mean.X"                    
-
-[62] "MeanOf.fBodyGyro.mean.Y"                    
-
-[63] "MeanOf.fBodyGyro.mean.Z"                    
-
-[64] "MeanOf.fBodyGyro.std.X"                     
-
-[65] "MeanOf.fBodyGyro.std.Y"                     
-
-[66] "MeanOf.fBodyGyro.std.Z"                     
-
-[67] "MeanOf.fBodyGyro.meanFreq.X"                
-
-[68] "MeanOf.fBodyGyro.meanFreq.Y"                
-
-[69] "MeanOf.fBodyGyro.meanFreq.Z"                
-
-[70] "MeanOf.fBodyAccMag.mean"                    
-
-[71] "MeanOf.fBodyAccMag.std"                     
-
-[72] "MeanOf.fBodyAccMag.meanFreq"                
-
-[73] "MeanOf.fBodyBodyAccJerkMag.mean"            
-
-[74] "MeanOf.fBodyBodyAccJerkMag.std"             
-
-[75] "MeanOf.fBodyBodyAccJerkMag.meanFreq"        
-
-[76] "MeanOf.fBodyBodyGyroMag.mean"               
-
-[77] "MeanOf.fBodyBodyGyroMag.std"                
-
-[78] "MeanOf.fBodyBodyGyroMag.meanFreq"           
-
-[79] "MeanOf.fBodyBodyGyroJerkMag.mean"           
-
-[80] "MeanOf.fBodyBodyGyroJerkMag.std"            
-
-[81] "MeanOf.fBodyBodyGyroJerkMag.meanFreq"       
-
-[82] "MeanOf.angle.tBodyAccMean.gravity."         
-
-[83] "MeanOf.angle.tBodyAccJerkMean..gravityMean."
-
-[84] "MeanOf.angle.tBodyGyroMean.gravityMean."    
-
-[85] "MeanOf.angle.tBodyGyroJerkMean.gravityMean."
-
-[86] "MeanOf.angle.X.gravityMean."                
-
-[87] "MeanOf.angle.Y.gravityMean."                
-
-[88] "MeanOf.angle.Z.gravityMean."           
+"3" "MeanOf_tBodyAcc.mean.X"
+"4" "MeanOf_tBodyAcc.mean.Y"
+"5" "MeanOf_tBodyAcc.mean.Z"
+"6" "MeanOf_tBodyAcc.std.X"
+"7" "MeanOf_tBodyAcc.std.Y"
+"8" "MeanOf_tBodyAcc.std.Z"
+"9" "MeanOf_tGravityAcc.mean.X"
+"10" "MeanOf_tGravityAcc.mean.Y"
+"11" "MeanOf_tGravityAcc.mean.Z"
+"12" "MeanOf_tGravityAcc.std.X"
+"13" "MeanOf_tGravityAcc.std.Y"
+"14" "MeanOf_tGravityAcc.std.Z"
+"15" "MeanOf_tBodyAccJerk.mean.X"
+"16" "MeanOf_tBodyAccJerk.mean.Y"
+"17" "MeanOf_tBodyAccJerk.mean.Z"
+"18" "MeanOf_tBodyAccJerk.std.X"
+"19" "MeanOf_tBodyAccJerk.std.Y"
+"20" "MeanOf_tBodyAccJerk.std.Z"
+"21" "MeanOf_tBodyGyro.mean.X"
+"22" "MeanOf_tBodyGyro.mean.Y"
+"23" "MeanOf_tBodyGyro.mean.Z"
+"24" "MeanOf_tBodyGyro.std.X"
+"25" "MeanOf_tBodyGyro.std.Y"
+"26" "MeanOf_tBodyGyro.std.Z"
+"27" "MeanOf_tBodyGyroJerk.mean.X"
+"28" "MeanOf_tBodyGyroJerk.mean.Y"
+"29" "MeanOf_tBodyGyroJerk.mean.Z"
+"30" "MeanOf_tBodyGyroJerk.std.X"
+"31" "MeanOf_tBodyGyroJerk.std.Y"
+"32" "MeanOf_tBodyGyroJerk.std.Z"
+"33" "MeanOf_tBodyAccMag.mean"
+"34" "MeanOf_tBodyAccMag.std"
+"35" "MeanOf_tGravityAccMag.mean"
+"36" "MeanOf_tGravityAccMag.std"
+"37" "MeanOf_tBodyAccJerkMag.mean"
+"38" "MeanOf_tBodyAccJerkMag.std"
+"39" "MeanOf_tBodyGyroMag.mean"
+"40" "MeanOf_tBodyGyroMag.std"
+"41" "MeanOf_tBodyGyroJerkMag.mean"
+"42" "MeanOf_tBodyGyroJerkMag.std"
+"43" "MeanOf_fBodyAcc.mean.X"
+"44" "MeanOf_fBodyAcc.mean.Y"
+"45" "MeanOf_fBodyAcc.mean.Z"
+"46" "MeanOf_fBodyAcc.std.X"
+"47" "MeanOf_fBodyAcc.std.Y"
+"48" "MeanOf_fBodyAcc.std.Z"
+"49" "MeanOf_fBodyAcc.meanFreq.X"
+"50" "MeanOf_fBodyAcc.meanFreq.Y"
+"51" "MeanOf_fBodyAcc.meanFreq.Z"
+"52" "MeanOf_fBodyAccJerk.mean.X"
+"53" "MeanOf_fBodyAccJerk.mean.Y"
+"54" "MeanOf_fBodyAccJerk.mean.Z"
+"55" "MeanOf_fBodyAccJerk.std.X"
+"56" "MeanOf_fBodyAccJerk.std.Y"
+"57" "MeanOf_fBodyAccJerk.std.Z"
+"58" "MeanOf_fBodyAccJerk.meanFreq.X"
+"59" "MeanOf_fBodyAccJerk.meanFreq.Y"
+"60" "MeanOf_fBodyAccJerk.meanFreq.Z"
+"61" "MeanOf_fBodyGyro.mean.X"
+"62" "MeanOf_fBodyGyro.mean.Y"
+"63" "MeanOf_fBodyGyro.mean.Z"
+"64" "MeanOf_fBodyGyro.std.X"
+"65" "MeanOf_fBodyGyro.std.Y"
+"66" "MeanOf_fBodyGyro.std.Z"
+"67" "MeanOf_fBodyGyro.meanFreq.X"
+"68" "MeanOf_fBodyGyro.meanFreq.Y"
+"69" "MeanOf_fBodyGyro.meanFreq.Z"
+"70" "MeanOf_fBodyAccMag.mean"
+"71" "MeanOf_fBodyAccMag.std"
+"72" "MeanOf_fBodyAccMag.meanFreq"
+"73" "MeanOf_fBodyBodyAccJerkMag.mean"
+"74" "MeanOf_fBodyBodyAccJerkMag.std"
+"75" "MeanOf_fBodyBodyAccJerkMag.meanFreq"
+"76" "MeanOf_fBodyBodyGyroMag.mean"
+"77" "MeanOf_fBodyBodyGyroMag.std"
+"78" "MeanOf_fBodyBodyGyroMag.meanFreq"
+"79" "MeanOf_fBodyBodyGyroJerkMag.mean"
+"80" "MeanOf_fBodyBodyGyroJerkMag.std"
+"81" "MeanOf_fBodyBodyGyroJerkMag.meanFreq"
+"82" "MeanOf_angle.tBodyAccMean.gravity."
+"83" "MeanOf_angle.tBodyAccJerkMean..gravityMean."
+"84" "MeanOf_angle.tBodyGyroMean.gravityMean."
+"85" "MeanOf_angle.tBodyGyroJerkMean.gravityMean."
+"86" "MeanOf_angle.X.gravityMean."
+"87" "MeanOf_angle.Y.gravityMean."
+"88" "MeanOf_angle.Z.gravityMean."
