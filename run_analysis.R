@@ -7,23 +7,19 @@ download.file(dataUrl,destfile=".//Project_data.zip", mode="wb")
 #Extract the dataset manually
 
 #Read in Activity Lables from activity_labels.txt. : 6 rows, 2 vars
-#$V1
-#$V2
 #Each row of this table contains the activity codes and names
+#Set appropriate column names
 activity_labels=read.table("UCI HAR Dataset\\activity_labels.txt")
 names(activity_labels)=c("ActivityCode","Activity")
 activity_labels
 
 #Read in features.txt : 561 rows, 2 vars 
 #Info about these in features_info.txt
-#$V1 - feature nr
-#$V2 - feature name
 #Each row of this table contains the variable names in x_train
 features=read.table("UCI HAR Dataset\\features.txt", sep=" ")
 names(features)
 head(features,5)
-features$V1
-features$V2
+
 #Get the feature names that correspond to mean and std vars
 mean_std_ftr_names = grep("mean|std", features$V2, ignore.case="TRUE")
 mean_std_ftr_names = features[mean_std_ftr_names,]
@@ -137,7 +133,7 @@ names(tidy_data)[1]="Activity"
 names(tidy_data)[2]="Subject"
 for (i in 2:87)
 {
-  names(tidy_data)[i+1]=paste("MeanOf",gsub("\\(\\)","",ftr_names[i-1]))
+  names(tidy_data)[i+1]=paste("MeanOf_",gsub("\\(\\)","",ftr_names[i-1]),sep="")
 }
 names(tidy_data)
 tidy_data = tidy_data[order(tidy_data$Activity,tidy_data$Subject),]
